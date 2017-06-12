@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('create');
+  this.route('palettes');
 });
 
 export default Router;
