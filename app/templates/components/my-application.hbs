@@ -30,7 +30,8 @@
 
 {{#if isAuthenticated}}
 {{!-- if user is authenticated, then display users --}}
-{{color-palette}}
+{{#link-to "create"}}Create New Palette{{/link-to}}
+{{!-- {{color-palette submitPalette='submitPalette'}} --}}
 {{/if}}
 
 <div class="col-md-8 col-md-offset-2">
