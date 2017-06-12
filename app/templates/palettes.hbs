@@ -2,7 +2,7 @@
 
 {{!-- refers to palette from index action in palettes.js --}}
 {{#each model as |palette|}}
-  {{palettes-get palette=palette}}
+  {{palettes-all deletePalette='deletePalette' palette=palette}}
 {{/each}}
 
 {{!-- {{palettes-get potato=palette}}

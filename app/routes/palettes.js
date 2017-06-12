@@ -5,4 +5,9 @@ export default Ember.Route.extend({
     // index method, gets all palettes
     return this.get('store').findAll('palette');
   },
+  actions: {
+    deletePalette (palette) {
+      palette.destroyRecord();
+    },
+  },
 });
