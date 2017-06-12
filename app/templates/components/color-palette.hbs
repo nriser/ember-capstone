@@ -1,0 +1,13 @@
+{{color-input-one colorone=palette.colorone}}
+{{color-input-two colortwo=palette.colortwo}}
+{{color-input-three colorthree=palette.colorthree}}
+{{color-input-four colorfour=palette.colorfour}}
+{{!-- colorone=palette.colorone: 'colorone' on left side refers to the user's input. 'palette.colorone' on right side refers to the empty 'palette' object created in color-palette.js. This creates a new property in palette object called colorone, which is then set to the value of the user input colorone
+palette {
+  colorone: colorone,
+  etc.
+}--}}
+
+<button type="submit" class="btn btn-primary" {{action "submitPalette"}}>
+  Create Palette
+</button>

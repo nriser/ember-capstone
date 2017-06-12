@@ -28,6 +28,11 @@
   {{flash-message flash=flash}}
 {{/each}}
 
+{{#if isAuthenticated}}
+{{!-- if user is authenticated, then display users --}}
+{{color-palette}}
+{{/if}}
+
 <div class="col-md-8 col-md-offset-2">
   {{outlet}}
 </div>
