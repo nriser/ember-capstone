@@ -1,2 +1,9 @@
 <h2>View all Palettes!</h2>
-{{palettes-get}}
+
+{{!-- refers to palette from index action in palettes.js --}}
+{{#each model as |palette|}}
+  {{palettes-get palette=palette}}
+{{/each}}
+
+{{!-- {{palettes-get potato=palette}}
+potato refers to potato in palettes-get.hbs --}}
