@@ -13,6 +13,8 @@ Router.map(function () {
   this.route('users');
   this.route('create');
   this.route('palettes');
+  // this.route('edit');
+  this.route('palette-edit', {path: 'palettes/:palette_id/edit'});
 });
 
 export default Router;

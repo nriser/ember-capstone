@@ -5,7 +5,6 @@ export default Ember.Component.extend({
   classNames: ['color-palette-form'],
 
   newPalette: {},
-  // palette:{
   //   color1: null,
   //   color2: null,
   //   color3: null,
@@ -14,7 +13,6 @@ export default Ember.Component.extend({
 
   actions: {
     createPalette () {
-      // console.log('what is this', this.get('palette'));
       let data = this.get('newPalette');
       console.log('data in palette-create.js is', data);
       this.sendAction('createPalette', data);

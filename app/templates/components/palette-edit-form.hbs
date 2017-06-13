@@ -1,0 +1,12 @@
+<form class='form-group' {{action 'editPalette' on='submit'}}>
+  {{input class='form-control' value=palette.color1}}
+  {{input class='form-control' value=palette.color2}}
+  {{input class='form-control' value=palette.color3}}
+  {{input class='form-control' value=palette.color4}}
+</form>
+
+{{!-- value=palette.color2: binding the user inputted data --}}
+
+<button type="submit" class="btn btn-primary" {{action "editPalette"}}>
+  Submit Edited Palette
+</button>
