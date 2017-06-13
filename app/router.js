@@ -11,8 +11,9 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('create');
   this.route('palettes');
+  // this.route('create');
+  this.route('palette-create', {path: 'palettes/create'});
   // this.route('edit');
   this.route('palette-edit', {path: 'palettes/:palette_id/edit'});
 });

@@ -14,7 +14,7 @@ export default Ember.Component.extend({
   actions: {
     createPalette () {
       let data = this.get('newPalette');
-      console.log('data in palette-create.js is', data);
+      console.log('data in palette-create-form.js is', data);
       this.sendAction('createPalette', data);
       this.set('newPalette.color1', null);
       this.set('newPalette.color2', null);
