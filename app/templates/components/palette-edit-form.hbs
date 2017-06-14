@@ -10,3 +10,8 @@
 <button type="submit" class="btn btn-primary" {{action "editPalette"}}>
   Submit Edited Palette
 </button>
+
+<button type='submit' class="btn btn-primary" {{action 'cancel' on="click"}}>
+  Back to My Palettes
+</button>
+{{!-- 'cancel' action: When user clicks on 'back' after having edited values but do not submit, roll back the attribute to the previous attributes (from new value to old value) --}}

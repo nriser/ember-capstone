@@ -8,6 +8,10 @@ export default Ember.Route.extend({
     editPalette(newPalette) {
       console.log('edited palette in edit.js is', newPalette);
       newPalette.save();
+    },
+    cancel () {
+      console.log('at cancel in routes/palette-edit.js');
+      history.back();
     }
   }
 });
