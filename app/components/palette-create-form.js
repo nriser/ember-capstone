@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   tagName: 'form',
   classNames: ['color-palette-form'],
 
-  newPalette: {},
+  newPalette: {}, // reset
   //   color1: null,
   //   color2: null,
   //   color3: null,
