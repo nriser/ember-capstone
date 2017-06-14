@@ -7,7 +7,16 @@ export default Ember.Route.extend({
   actions: {
     editPalette(newPalette) {
       console.log('edited palette in edit.js is', newPalette);
-      newPalette.save();
+      newPalette.save()
+      .then(() => {
+        this.get('flashMessages')
+        .success('Added to My Paletttes');
+      })
+      .then(() => this.transitionTo('palettes'))
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('Error: Please do not leave any field empty.');
+      });
     },
     cancel () {
       console.log('at cancel in routes/palette-edit.js');

@@ -8,7 +8,15 @@ export default Ember.Route.extend({
   },
   actions: {
     deletePalette (palette) {
-      palette.destroyRecord();
+      palette.destroyRecord()
+      .then(() => {
+        this.get('flashMessages')
+        .success('Palette successfully deleted.');
+      })
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('Error: Please try again.');
+      });
     },
   },
 });
