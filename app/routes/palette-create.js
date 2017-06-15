@@ -2,11 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   ajaxImageAnalysis: Ember.inject.service('ajax-image-analysis'),
-
-  // model () {
-  //   return this.get('store').find('imageUrl');
-  // },
-
+  model () {
+    let hitApiToRedirectToSignIn = this.get('store').findAll('palette');
+    return hitApiToRedirectToSignIn;
+  },
   actions: {
     createPalette (data) {
       console.log('this in routes/palette-create.js is ', this);
