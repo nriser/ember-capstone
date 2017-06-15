@@ -1,0 +1,106 @@
+body {
+  color: $color-scorpion;
+  font-family: 'Asap', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .07em;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', sans-serif;
+  font-size: 4em;
+  letter-spacing: 10px;
+  line-height: 1.1em;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  color: $color-old-rose;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: $heading-color;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 0.5em;
+  font-size: 2.3em;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+
+h3 {
+  margin: 0 0 0.5em;
+  font-size: 1.4em;
+}
+
+h4 {
+  margin: 0 0 1.5em;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: none;
+}
+
+h5 {
+  font-size: 0.9em;
+}
+
+h6 {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Asap', sans-serif;
+  margin: 0 0 1em;
+  text-align: justify;
+  font-size: 1em;
+}
+
+a {
+  text-transform: uppercase;
+  font-family: 'Asap', serif;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+label {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  letter-spacing: .1em;
+  color: $label-color;
+}
+
+input, button {
+  font-family: 'Asap', sans-serif;
+}
+
+input::placeholder {
+  text-align: center;
+  color: $color-coral-tree-rgba-light;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  font-weight: 400;
+	font-size: 1em;
+	color: $input-color;
+  padding: 8px 30px;
+	border: 1px solid $input-color;
+  text-align: center;
+  margin: 10px;
+  margin: 10px auto;
+}

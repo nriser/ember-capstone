@@ -1,0 +1,37 @@
+/////////////////////////////////////////////
+// color opacity
+/////////////////////////////////////////////
+
+$opacity-very-light: .3;
+$opacity-light: .5;
+$opacity-opaque: 1;
+
+/////////////////////////////////////////////
+// colors: lightest to darkest (approx.)
+/////////////////////////////////////////////
+
+$color-white: #fff;
+$color-white-pointer: #fefbff;
+$color-gallery: #eeeeee;
+$color-old-rose: #bf7d7d;
+$color-coral-tree: #b2766f;
+$color-coral-tree-rgba-light: rgba(178,118,111,$opacity-light);
+$color-coral-tree-rgba-opaque: rgba(178,118,111,$opacity-opaque);
+$color-au-chico: #8a5a5a;
+$color-au-chico-rgba: rgba(138,90,90,.9);
+$color-au-chico-rgba-light: rgba(138,90,90,$opacity-light);
+$color-au-chico-rgba-opaque: rgba(138,90,90,$opacity-opaque);
+$color-roman-coffee: #805a54;
+$color-sycamore: #7d8240;
+$color-sycamore-rgba: rgba(125,130,64,$opacity-very-light);
+$color-scorpion: #606060;
+
+/////////////////////////////////////////////
+// elements
+/////////////////////////////////////////////
+
+
+$heading-color: $color-roman-coffee;
+$input-color: $color-coral-tree;
+$label-color: $color-coral-tree;
+$placeholder-color:
