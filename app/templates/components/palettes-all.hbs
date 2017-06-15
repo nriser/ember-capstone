@@ -1,8 +1,13 @@
-<span>{{palette.color1}}</span>
-<span>{{palette.color2}}</span>
-<span>{{palette.color3}}</span>
-<span>{{palette.color4}}</span>
-{{!-- {{#link-to "palette-edit"}}<button class="btn btn-xs btn-primary" {{action 'editPalette'}}>Edit</button>{{/link-to}} --}}
+<span class="color1" style={{colorBg1}}>{{palette.color1}}</span>
+<span class="color2" style={{colorBg2}}>{{palette.color2}}</span>
+<span class="color3" style={{colorBg3}}>{{palette.color3}}</span>
+<span class="color4" style={{colorBg4}}>{{palette.color4}}</span>
+
+{{!-- Cannot do below code due to error, "WARNING: Binding style attributes may introduce cross-site scripting vulnerabilities; please ensure that values being bound are properly escaped. For more information, including how to disable this warning, see http://emberjs.com/deprecations/v1.x/#toc_warning-when-binding-style-attributes"
+
+<span class="color4" style="background-color: {{palette.color4}}">{{palette.color4}}</span> --}}
+
+
 <button class="btn btn-xs btn-danger btn-primary" {{action 'deletePalette'}}>Delete</button>
 
 {{#link-to 'palette-edit' palette}}<button type="button" class="btn btn-info btn-sm">Edit</button>{{/link-to}}
