@@ -4,6 +4,11 @@ export default Ember.Component.extend({
   tagName: 'form',
   classNames: ['form-horizontal'],
 
+  init() {
+    this._super(...arguments);
+    this.set('passwords', {});
+  },
+
   passwords: {},
 
   actions: {
