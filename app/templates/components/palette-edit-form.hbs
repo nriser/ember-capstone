@@ -1,9 +1,9 @@
-<form class='form-group' {{action 'editPalette' on='submit'}}>
-  {{input class='form-control' value=palette.color1}}
+<form class='palette-edit-form form-group' {{action 'editPalette' on='submit'}}>
+  {{input class='palette-edit-input' value=palette.color1}}
   {{!-- linked to palette in data store/backend --}}
-  {{input class='form-control' value=palette.color2}}
-  {{input class='form-control' value=palette.color3}}
-  {{input class='form-control' value=palette.color4}}
+  {{input class='palette-edit-input' value=palette.color2}}
+  {{input class='palette-edit-input' value=palette.color3}}
+  {{input class='palette-edit-input' value=palette.color4}}
 </form>
 
 {{!-- value=palette.color2: binding the user inputted data --}}

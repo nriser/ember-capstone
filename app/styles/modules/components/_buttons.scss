@@ -2,6 +2,26 @@
 	font-size: .5em;
 }
 
+.bttn-jelly {
+  margin-bottom: 20px;
+  width: 200px;
+}
+
 .palette-button-group {
+  margin-left: auto;
+  align-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 33%;
+}
+
+.button-group-view-create {
   text-align: right;
+  margin-right: 10%;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
 }

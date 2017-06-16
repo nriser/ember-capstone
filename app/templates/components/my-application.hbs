@@ -22,7 +22,7 @@
   </div>
 </nav>
 
-<h1>
+<h1 class='colorspiration-header'>
   <span class='header-color-c'>C</span>
   <span class='header-color-o'>o</span>
   <span class='header-color-l'>l</span>
@@ -45,12 +45,14 @@
 {{/each}}
 
 {{#if isAuthenticated}}
-{{!-- if user is authenticated, then display users --}}
-{{#link-to "palette-create"}}<button type="button" class="bttn-jelly bttn-md button-custom">Create New Palette</button>{{/link-to}}
-{{#link-to "palettes"}}<button type="button" class="bttn-jelly bttn-md button-custom">My Palettes</button>{{/link-to}}
-{{!-- {{color-palette submitPalette='submitPalette'}} --}}
+<div class="button-group-view-create">
+  {{!-- if user is authenticated, then display users --}}
+  {{#link-to "palette-create"}}<button type="button" class="bttn-jelly bttn-md button-custom">Create New Palette</button>{{/link-to}}
+  {{#link-to "palettes"}}<button type="button" class="bttn-jelly bttn-md button-custom">My Palettes</button>{{/link-to}}
+  {{!-- {{color-palette submitPalette='submitPalette'}} --}}
+</div>
 {{/if}}
 
-<div class="col-md-8 col-md-offset-2">
+<div class="my-app-outlet">
   {{outlet}}
 </div>
