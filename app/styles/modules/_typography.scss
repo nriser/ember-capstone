@@ -39,13 +39,14 @@ h2 {
   font-weight: 400;
 }
 
-h2.api-color {
+h2.api-color, h2.palette-colors {
   font-family: 'Fredericka the Great', sans-serif;
   letter-spacing: -2px;
   line-height: 1.1em;
-  margin: 0 0 30px 0;
+  margin: 0 0 0 0;
   text-transform: uppercase;
-  color: $color-old-rose;
+  color: #919191;
+  padding: 40px 15px;
 }
 
 h3 {

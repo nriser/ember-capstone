@@ -1,6 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  tagName: 'div',
+  classNames: ['palette-colors-buttons'],
+
   colorBg1: Ember.computed('color1', function() {
     let color1 = this.get('palette').get('color1');
     return Ember.String.htmlSafe("background-color: " + color1);
