@@ -3,12 +3,6 @@
     {{navbar-header}}
 
     <div class="collapse navbar-collapse" id="navigation">
-      <ul class="nav navbar-nav">
-        {{#if isAuthenticated}}
-        {{!-- if user is authenticated, then display users --}}
-        <li>{{#link-to "users"}}Users{{/link-to}}</li>
-        {{/if}}
-      </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
         <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
@@ -46,10 +40,8 @@
 
 {{#if isAuthenticated}}
 <div class="button-group-view-create">
-  {{!-- if user is authenticated, then display users --}}
   {{#link-to "palette-create"}}<button type="button" class="bttn-jelly bttn-md button-custom">Create New Palette</button>{{/link-to}}
   {{#link-to "palettes"}}<button type="button" class="bttn-jelly bttn-md button-custom">My Palettes</button>{{/link-to}}
-  {{!-- {{color-palette submitPalette='submitPalette'}} --}}
 </div>
 {{/if}}
 

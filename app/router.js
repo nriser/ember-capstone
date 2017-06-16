@@ -10,7 +10,6 @@ Router.map(function () {
   this.route('sign-up');
   this.route('sign-in');
   this.route('change-password');
-  this.route('users');
   this.route('palettes');
   // this.route('create');
   this.route('palette-create', {path: 'palettes/create'});
