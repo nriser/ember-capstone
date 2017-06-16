@@ -9,7 +9,6 @@ export default Ember.Component.extend({
       this.sendAction('submit', this.get('credentials'));
     },
     callColorApi() {
-      console.log('call impalette image analysis api inside palette-analysis-form.js');
       let imageUrl = this.get('imageUrl');
       this.sendAction('callColorApi', imageUrl);
     },

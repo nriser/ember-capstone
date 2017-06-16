@@ -14,8 +14,6 @@ export default Ember.Component.extend({
   actions: {
     createPalette () {
       let data = this.get('newPalette');
-      console.log('data in palette-create-form.js is', data);
-      //
       if (data.color1.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/) &&
       data.color2.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/) &&
       data.color3.match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/) &&

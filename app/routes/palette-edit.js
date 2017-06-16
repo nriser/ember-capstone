@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
   actions: {
     editPalette(newPalette) {
-      console.log('edited palette in edit.js is', newPalette);
       newPalette.save()
       .then(() => {
         this.get('flashMessages')
@@ -19,7 +18,6 @@ export default Ember.Route.extend({
       });
     },
     cancel () {
-      console.log('at cancel in routes/palette-edit.js');
       history.back();
     }
   }
