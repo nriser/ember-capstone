@@ -26,6 +26,23 @@ $color-sycamore: #7d8240;
 $color-sycamore-rgba: rgba(125,130,64,$opacity-very-light);
 $color-scorpion: #606060;
 
+$color-viridian: #3d8575;
+$color-ocean-green: #4ba490;
+$color-tradewind: #53b6a0;
+$color-downy: #5bc8af;
+$color-downy-light: #72c3b1;
+$color-sinbad: #a1d7cb;
+$color-prelude: #c6c4ea;
+$color-cold-purple: #b4b0e4;
+$color-cold-purple-dark: #aaa6e0;
+$color-cold-purple-darker: #a19cdd;
+$color-cold-purple-darkest: #9893da;
+$color-blue-bell: #8b86c7;
+$color-wild-blue-yonder: #7d79b3;
+$color-kimberly: #6f6b9f;
+$color-kimberly-dark: #615e8b;
+$color-comet: #535177;
+
 /////////////////////////////////////////////
 // elements
 /////////////////////////////////////////////
@@ -34,4 +51,4 @@ $color-scorpion: #606060;
 $heading-color: $color-roman-coffee;
 $input-color: $color-coral-tree;
 $label-color: $color-coral-tree;
-$placeholder-color:
+$placeholder-color: $color-coral-tree-rgba-light;

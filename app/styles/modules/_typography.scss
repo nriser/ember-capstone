@@ -12,8 +12,8 @@ body {
 
 h1 {
   font-family: 'Fredericka the Great', sans-serif;
-  font-size: 4em;
-  letter-spacing: 10px;
+  font-size: 3em;
+  letter-spacing: -2px;
   line-height: 1.1em;
   margin: 0 0 30px 0;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ input, button {
 
 input::placeholder {
   text-align: center;
-  color: $color-coral-tree-rgba-light;
+  color: $placeholder-color;
 }
 
 input[type="text"], input[type="password"], input[type="email"] {
@@ -103,4 +103,63 @@ input[type="text"], input[type="password"], input[type="email"] {
   text-align: center;
   margin: 10px;
   margin: 10px auto;
+}
+
+span.header-color-c {
+  color: $color-viridian;
+}
+
+span.header-color-o {
+  color: $color-ocean-green;
+}
+
+span.header-color-l {
+  color: $color-tradewind;
+}
+
+span.header-color-o-2 {
+  color: $color-downy;
+}
+
+span.header-color-r {
+  color: $color-sinbad;
+}
+
+span.header-spiration-s {
+  color: $color-prelude;
+}
+
+span.header-spiration-p {
+  color: $color-cold-purple;
+}
+span.header-spiration-i {
+  color: $color-cold-purple-dark;
+}
+
+span.header-spiration-r {
+  color: $color-cold-purple-darker;
+}
+
+span.header-spiration-a {
+  color: $color-cold-purple-darkest;
+}
+
+span.header-spiration-t {
+  color: $color-blue-bell;
+}
+
+span.header-spiration-i-2 {
+  color: $color-wild-blue-yonder;
+}
+
+span.header-spiration-o {
+  color: $color-kimberly;
+}
+
+span.header-spiration-n {
+  color: $color-kimberly-dark;
+}
+
+span.header-spiration-period {
+  color: $color-comet;
 }
