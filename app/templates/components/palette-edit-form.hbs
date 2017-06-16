@@ -8,11 +8,14 @@
 
 {{!-- value=palette.color2: binding the user inputted data --}}
 
-<button type="submit" class="bttn-jelly bttn-md button-custom" {{action "editPalette"}}>
-  Submit Edited Palette
-</button>
+<div class="edit-group-buttons">
+  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "editPalette"}}>
+    Submit Edited Palette
+  </button>
 
-<button type='submit' class="bttn-jelly bttn-md bttn-back button-custom" {{action 'cancel' on="click"}}>
-  Back to My Palettes
-</button>
+  <button type='submit' class="bttn-jelly bttn-md bttn-back button-custom" {{action 'cancel' on="click"}}>
+    Back to My Palettes
+  </button>
+</div>
+
 {{!-- 'cancel' action: When user clicks on 'back' after having edited values but do not submit, roll back the attribute to the previous attributes (from new value to old value) --}}
