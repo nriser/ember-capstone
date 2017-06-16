@@ -1,13 +1,17 @@
-{{color-input-one color1=newPalette.color1}}
-{{color-input-two color2=newPalette.color2}}
-{{color-input-three color3=newPalette.color3}}
-{{color-input-four color4=newPalette.color4}}
+<div class="palette-create-inputs">
+  {{color-input-one color1=newPalette.color1}}
+  {{color-input-two color2=newPalette.color2}}
+  {{color-input-three color3=newPalette.color3}}
+  {{color-input-four color4=newPalette.color4}}
+</div>
+
 {{!-- color1=newPalette.color1: 'color1' on left side refers to the user's input. 'newPalette.color1' on right side refers to the empty 'newPalette' object created in palette-create.js. This creates a new property in newPalette object called color1, which is then set to the value of the user input color1
 newPalette {
   color1: color1,
   etc.
 }--}}
-
-<button type="submit" class="bttn-jelly bttn-md button-custom" {{action "createPalette"}}>
-  Create Palette
-</button>
+<div class="button-create-palette-wrapper">
+  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "createPalette"}}>
+    Create Palette
+  </button>
+</div>

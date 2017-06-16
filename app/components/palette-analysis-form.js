@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   imageUrl: null, // reset
+  classNames: ['palette-analysis-wrapper'],
 
   actions: {
     submit () {

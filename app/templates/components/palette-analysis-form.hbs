@@ -1,5 +1,8 @@
-{{input class='form-control' value=imageUrl}}
+{{input class='image-url-input-field' value=imageUrl placeholder="Enter an image URL"}}
 
-<button type="submit" class="bttn-jelly bttn-md button-custom" {{action 'callColorApi'}}>
-  Get colors!
-</button>
+
+<div class="button-find-palettes-wrapper">
+  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action 'callColorApi'}}>
+    Get colors!
+  </button>
+</div>
