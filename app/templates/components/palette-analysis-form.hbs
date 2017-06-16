@@ -1,3 +1,5 @@
-<form class='form-group' {{action 'callColorApi' on='submit'}}>
-  {{input class='form-control' value=imageUrl}}
-</form>
+{{input class='form-control' value=imageUrl}}
+
+<button type="submit" class="bttn-jelly bttn-md button-custom" {{action 'callColorApi'}}>
+  Get colors!
+</button>
