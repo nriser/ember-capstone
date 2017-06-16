@@ -16,25 +16,19 @@
 
 ## Build Setup
 
-To get started, follow installation guide below:
+To install dependencies, run:
 
 ```
-npm install -g ember-cli
+npm install
 
-npm install -g bower
-
-brew install watchman (Recommended)
-
+bower install
 ```
-Visit https://ember-cli.com/user-guide/#getting-started for more information on how to get started with EmberJS.
 
-## Planning
-
-### Wireframe
+## Wireframe
 
 ![Wireframe](https://s3.us-east-2.amazonaws.com/wdi-nikki-projects/capstone_wireframe.JPG)
 
-### User Stories
+## User Stories
 
 As a user, I want to…
 1. Sign in upon sign up.
@@ -48,7 +42,7 @@ As a user, I want to…
 9. Click on 'Cancel' if I change my mind about editing a palette
 10. Click on ‘Delete’ to delete a palette
 
-### General Approach
+## General Approach
 
 I decided to build this app because I always have a hard time choosing good colors to use for my projects, spending hours trying to create a custom palette using web apps like Adobe Kuler. Colorspiration allows a user to submit images, ones with whatever colors that the user wishes to use for a project. Upon submission, a user will get a list of up to 20 dominant colors present in the image and each of its corresponding hex code, and can create a new palette based on the list, update, edit, and delete a palette.
 
