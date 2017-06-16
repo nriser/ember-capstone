@@ -1,10 +1,20 @@
-{{email-input email=credentials.email}}
-{{password-input password=credentials.password}}
+<div class="sign-in-form-group">
+  <div class="form-group">
+      {{email-input email=credentials.email}}
+  </div>
 
-<button type="submit" class="bttn-jelly bttn-md button-custom" {{action "submit"}}>
-  Sign In
-</button>
+  <div class="form-group">
+      {{password-input password=credentials.password}}
+  </div>
+</div>
 
-<button class="bttn-jelly bttn-md button-custom" {{action "reset"}}>
-  Reset
-</button>
+
+<div class="sign-in-buttons-wrapper">
+  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "submit"}}>
+    Sign In
+  </button>
+
+  <button class="bttn-jelly bttn-md button-custom button-cancel" {{action "reset"}}>
+    Reset
+  </button>
+</div>

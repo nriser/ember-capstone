@@ -49,22 +49,29 @@
   text-align: center;
 }
 
-.change-pw-form-group {
+.change-pw-form-group, .sign-in-form-group, .sign-up-form-group {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .buttons-change-pw-wrapper {
-  align-content: space-between;
-  display: flex;
-  flex-direction: row;
-  width: 300px;
   margin: auto;
-  // flex-wrap: wrap;
+  text-align: center;
 }
 
 .buttons-change-pw {
   text-align: center;
   margin: 15px;
+}
+
+.sign-in-buttons-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.buttons-sign-up-wrapper {
+  margin: auto;
+  text-align: center;
+  // flex-wrap: wrap;
 }
