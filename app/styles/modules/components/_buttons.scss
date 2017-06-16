@@ -48,3 +48,23 @@
 .edit-group-buttons {
   text-align: center;
 }
+
+.change-pw-form-group {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons-change-pw-wrapper {
+  align-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: auto;
+  // flex-wrap: wrap;
+}
+
+.buttons-change-pw {
+  text-align: center;
+  margin: 15px;
+}
