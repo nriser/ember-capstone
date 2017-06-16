@@ -40,27 +40,17 @@ export default Ember.Route.extend({
         // find the number of colors in tags array response
         console.log('response.tags.length is', response.tags.length);
 
-        // append only the color(s) that exist
-        for (let i = 0; i < response.tags.length; i++) {
-          Ember.$('#palette-result-color' + i).append(response.tags[i].color);
-          Ember.$('#palette-result-color' + i).css("background-color", response.tags[i].color);
+        // delete past API color results upon next successful API call
+        for (let i = 0; i < 20; i++) {
+          Ember.$('#palette-result-color' + i).html('');
+          Ember.$('#palette-result-color' + i).css("background-color", '#fff');
         }
 
-        // Ember.$('#palette-result-color0').append(response.tags[0].color);
-        // Ember.$('#palette-result-color1').append(response.tags[1].color);
-        // Ember.$('#palette-result-color2').append(response.tags[2].color);
-        // Ember.$('#palette-result-color3').append(response.tags[3].color);
-        // Ember.$('#palette-result-color4').append(response.tags[4].color);
-        // Ember.$('#palette-result-color5').append(response.tags[5].color);
-        // Ember.$('#palette-result-color6').append(response.tags[6].color);
-
-        // Ember.$('#palette-result-color0').css("background-color", response.tags[0].color);
-        // Ember.$('#palette-result-color1').css("background-color", response.tags[1].color);
-        // Ember.$('#palette-result-color2').css("background-color", response.tags[2].color);
-        // Ember.$('#palette-result-color3').css("background-color", response.tags[3].color);
-        // Ember.$('#palette-result-color4').css("background-color", response.tags[4].color);
-        // Ember.$('#palette-result-color5').css("background-color", response.tags[5].color);
-        // Ember.$('#palette-result-color6').css("background-color", response.tags[6].color);
+        // append only the color(s) that exist
+        for (let i = 0; i < response.tags.length; i++) {
+          Ember.$('#palette-result-color' + i).html("<h2 class='api-color'>" + response.tags[i].color + "</h2>");
+          Ember.$('#palette-result-color' + i).css("background-color", response.tags[i].color);
+        }
       })
       .catch((reason) => {
         console.log('The reason it failed is ', reason);

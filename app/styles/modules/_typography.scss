@@ -39,6 +39,15 @@ h2 {
   font-weight: 400;
 }
 
+h2.api-color {
+  font-family: 'Fredericka the Great', sans-serif;
+  letter-spacing: -2px;
+  line-height: 1.1em;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  color: $color-old-rose;
+}
+
 h3 {
   margin: 0 0 0.5em;
   font-size: 1.4em;
@@ -162,4 +171,8 @@ span.header-spiration-n {
 
 span.header-spiration-period {
   color: $color-comet;
+}
+
+.api-color {
+
 }
