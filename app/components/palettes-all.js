@@ -24,8 +24,8 @@ export default Ember.Component.extend({
     deletePalette () {
       this.sendAction('deletePalette', this.get('palette'));
     },
-    hideButtons () {
-      Ember.$('.button-group-view-create').hide();
-    }
+    // hideButtons () {
+    //   Ember.$('.button-group-view-create').hide();
+    // }
   },
 });

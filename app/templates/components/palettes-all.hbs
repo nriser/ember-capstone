@@ -13,8 +13,11 @@
 <div class="palette-button-group">
   <button class="bttn-jelly bttn-md bttn-danger button-custom" {{action 'deletePalette'}}>Delete</button>
 
-  {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit" {{action 'hideButtons'}}>Edit</button>{{/link-to}}
+  {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit">Edit</button>{{/link-to}}
 </div>
+
+{{!-- {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit" {{action 'hideButtons'}}>Edit</button>{{/link-to}}
+</div> --}}
 
 {{!-- link-to 'palette-edit' palette: give the 'palette-edit' url the palette id. Note: Passing data in a link-to is different than passing to a component --}}
 
