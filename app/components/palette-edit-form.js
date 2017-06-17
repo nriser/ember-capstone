@@ -15,6 +15,7 @@ export default Ember.Component.extend({
       editedPalette.get('color3').match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/) &&
       editedPalette.get('color4').match(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/)) {
         this.sendAction('editPalette', editedPalette);
+        Ember.$('.button-group-view-create').show();
       } else {
         this.get('flashMessages')
         .danger("Error: Please provide a valid hex code, starting with a '#'");
@@ -26,6 +27,7 @@ export default Ember.Component.extend({
     cancel () {
       this.get('palette').rollbackAttributes();
       this.sendAction('cancel');
+      Ember.$('.button-group-view-create').show();
     }
   }
 });
