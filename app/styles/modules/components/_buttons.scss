@@ -4,16 +4,16 @@
 
 .bttn-jelly {
   margin-bottom: 20px;
-  width: 200px;
 }
 
 .palette-button-group {
+  // border: 2px solid blue;
   margin-left: auto;
   align-content: space-between;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 33%;
+  width: 200px;
 }
 
 .button-group-view-create {

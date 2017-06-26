@@ -10,11 +10,11 @@
 
 
 <div class="sign-in-buttons-wrapper">
-  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "submit"}}>
-    Sign In
+  <button class="bttn-jelly bttn-md button-custom button-cancel" {{action "reset"}}><span class="glyphicon glyphicon-refresh"></span>
+    Reset Fields
   </button>
 
-  <button class="bttn-jelly bttn-md button-custom button-cancel" {{action "reset"}}>
-    Reset
+  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "submit"}}><span class="glyphicon glyphicon-log-in"></span>
+    Sign In
   </button>
 </div>

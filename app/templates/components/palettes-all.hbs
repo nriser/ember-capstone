@@ -11,9 +11,11 @@
 <span class="color4" style="background-color: {{palette.color4}}">{{palette.color4}}</span> --}}
 
 <div class="palette-button-group">
-  <button class="bttn-jelly bttn-md bttn-danger button-custom" {{action 'deletePalette'}}>Delete</button>
+  <button class="bttn-jelly bttn-md bttn-danger button-custom" {{action 'deletePalette'}}>
+    <span class="glyphicon glyphicon-trash"></span>Delete
+  </button>
 
-  {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit">Edit</button>{{/link-to}}
+  {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit"><span class="glyphicon glyphicon-edit"></span>Edit</button>{{/link-to}}
 </div>
 
 {{!-- {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit" {{action 'hideButtons'}}>Edit</button>{{/link-to}}

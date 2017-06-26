@@ -10,12 +10,12 @@ value=palette.color2, binding the user inputted data to palettes automatically -
 {{!-- if insted value=palette.color1, linked to palette in data store/backend --}}
 
 <div class="edit-group-buttons">
-  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "editPalette"}}>
-    Submit Edited Palette
+  <button type='submit' class="bttn-jelly bttn-md bttn-back button-custom" {{action 'cancel' on="click"}}><span class="glyphicon glyphicon-arrow-left"></span>
+    Back to My Palettes
   </button>
 
-  <button type='submit' class="bttn-jelly bttn-md bttn-back button-custom" {{action 'cancel' on="click"}}>
-    Back to My Palettes
+  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "editPalette"}}><span class="glyphicon glyphicon-save"></span>
+    Save Palette
   </button>
 </div>
 
