@@ -113,7 +113,13 @@ input[type="text"], input[type="password"], input[type="email"] {
   padding: 8px 30px;
 	border: 1px solid $input-color;
   text-align: center;
-  margin: 10px auto;
+  // margin: 10px auto;
+}
+
+.input-group-addon {
+  border: 1px solid $input-color;
+  color: $color-white;
+  background-color: $input-color;
 }
 
 span.header-color-c {
@@ -180,6 +186,5 @@ span.header-spiration-period {
 }
 
 .glyphicon {
-    font-size: 1em;
-    margin-right: .5em;
+  font-size: 1em;
 }

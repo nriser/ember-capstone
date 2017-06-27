@@ -1,8 +1,12 @@
-{{input class='image-url-input-field' value=imageUrl placeholder="Enter an image URL"}}
-
+<div class="input-group">
+  <span class="input-group-addon">
+    <span class="glyphicon glyphicon-link"></span>
+  </span>
+  {{input class='image-url-input-field' value=imageUrl placeholder="Enter an image URL"}}
+</div>
 
 <div class="button-find-palettes-wrapper">
   <button type="submit" class="bttn-jelly bttn-md button-custom" {{action 'callColorApi'}}><span class="glyphicon glyphicon-send"></span>
-    Get colors!
+    Get Colors
   </button>
 </div>
