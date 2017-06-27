@@ -17,7 +17,7 @@ h1 {
   line-height: 1.1em;
   margin: 0 0 30px 0;
   text-transform: uppercase;
-  color: $color-old-rose;
+  color: $heading-color;
 }
 
 h2,
@@ -28,7 +28,7 @@ h6 {
   font-family: 'Asap', sans-serif;
   font-weight: 500;
   letter-spacing: 3px;
-  color: #43C09B;
+  color: $heading-color;
   text-transform: uppercase;
 }
 
@@ -45,7 +45,7 @@ h2.api-color, h2.palette-colors {
   line-height: 1.1em;
   margin: 0 0 0 0;
   text-transform: uppercase;
-  color: #919191;
+  color: $color-api;
   padding: 40px 15px;
 }
 
@@ -60,6 +60,7 @@ h4 {
   font-weight: 400;
   text-transform: none;
   letter-spacing: -.5;
+  color: $heading2-color;
 }
 
 h5 {
@@ -77,7 +78,7 @@ p {
   margin: 0 0 1em;
   text-align: justify;
   font-size: 1em;
-  color: #43C09B;
+  color: $p-color;
 }
 
 a {
@@ -181,14 +182,10 @@ span.header-spiration-period {
   color: $color-comet;
 }
 
-.api-color {
-
-}
-
 .glyphicon {
   font-size: 1em;
 }
 
 legend {
-  color: $color-old-rose;
+  color: $legend-color;
 }
