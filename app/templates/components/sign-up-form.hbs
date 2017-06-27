@@ -1,13 +1,15 @@
 <fieldset>
   <legend>Sign Up</legend>
-  {{email-input email=credentials.email}}
-  {{!-- calls email-input component --}}
-  {{!-- the data it will be using is email=... which is whatever user inputs. credentials here is from line 7 of sign-up-form.js --}}
-  {{!-- email= is line 5 of email-input.js, value=email-input --}}
-  {{password-input password=credentials.password}}
-  {{!-- calls password-input component, and assigns credentials.password to it. --}}
-  {{password-confirmation-input password=credentials.passwordConfirmation}}
-  {{!-- same thing --}}
+  <div class="sign-up-form-group form-group">
+    {{email-input email=credentials.email}}
+    {{!-- calls email-input component --}}
+    {{!-- the data it will be using is email=... which is whatever user inputs. credentials here is from line 7 of sign-up-form.js --}}
+    {{!-- email= is line 5 of email-input.js, value=email-input --}}
+    {{password-input password=credentials.password}}
+    {{!-- calls password-input component, and assigns credentials.password to it. --}}
+    {{password-confirmation-input password=credentials.passwordConfirmation}}
+    {{!-- same thing --}}
+  </div>
 
   <div class="buttons-sign-up-wrapper">
     <button class="bttn-jelly bttn-md button-cancel button-custom" {{action "reset"}}><span class="glyphicon glyphicon-refresh"></span>

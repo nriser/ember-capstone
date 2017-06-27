@@ -21,12 +21,12 @@
 }
 
 .button-create-palette-wrapper {
-  margin: 25px auto 40px auto;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .button-find-palettes-wrapper {
-  margin: 25px auto 40px auto;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -45,8 +45,7 @@
 
 .change-pw-form-group, .sign-in-form-group, .sign-up-form-group {
   // width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .buttons-change-pw-wrapper {
