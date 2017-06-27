@@ -2,10 +2,13 @@
 
 <h4>Enter an image URL and get up to 20 dominant colors. Add the colors you like into the form below to create a new palette!</h4>
 <p class="create-image-restriction">The image must be a JPEG, PNG, or GIF URL under 20 MB with resolution of up to 8192 x 8192.</p>
-{{palette-analysis-form callColorApi='callColorApi'}}
+<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+  {{palette-analysis-form callColorApi='callColorApi'}}
+</div>
 
-{{palette-create-form createPalette='createPalette'}}
-
+<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+  {{palette-create-form createPalette='createPalette'}}
+</div>
 {{!-- colorTag API currently returns top 20 color tags --}}
 <div id='palette-result-color0'></div>
 <div id='palette-result-color1'></div>

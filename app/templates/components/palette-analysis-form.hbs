@@ -1,12 +1,17 @@
-<div class="input-group">
-  <span class="input-group-addon">
-    <span class="glyphicon glyphicon-link"></span>
-  </span>
-  {{input class='image-url-input-field' value=imageUrl placeholder="Enter an image URL"}}
-</div>
+<fieldset>
 
-<div class="button-find-palettes-wrapper">
-  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action 'callColorApi'}}><span class="glyphicon glyphicon-send"></span>
-    Get Colors
-  </button>
-</div>
+  <label>Enter an image URL</label>
+  <div class="input-group">
+    <span class="input-group-addon">
+      <span class="glyphicon glyphicon-link"></span>
+    </span>
+    {{input class="image-url-input-field form-control" value=imageUrl placeholder="Image URL"}}
+  </div>
+
+  <div class="button-find-palettes-wrapper">
+    <button type="submit" class="bttn-jelly bttn-md button-custom" {{action 'callColorApi'}}><span class="glyphicon glyphicon-send"></span>
+      Get Colors
+    </button>
+  </div>
+
+</fieldset>

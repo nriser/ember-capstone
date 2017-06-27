@@ -1,20 +1,16 @@
-<div class="sign-in-form-group">
-  <div class="form-group">
-      {{email-input email=credentials.email}}
+<fieldset>
+  <legend>Sign In</legend>
+  {{email-input email=credentials.email}}
+  {{password-input password=credentials.password}}
+
+
+  <div class="sign-in-buttons-wrapper">
+    <button class="bttn-jelly bttn-md button-custom button-cancel" {{action "reset"}}><span class="glyphicon glyphicon-refresh"></span>
+      Reset Fields
+    </button>
+
+    <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "submit"}}><span class="glyphicon glyphicon-log-in"></span>
+      Sign In
+    </button>
   </div>
-
-  <div class="form-group">
-      {{password-input password=credentials.password}}
-  </div>
-</div>
-
-
-<div class="sign-in-buttons-wrapper">
-  <button class="bttn-jelly bttn-md button-custom button-cancel" {{action "reset"}}><span class="glyphicon glyphicon-refresh"></span>
-    Reset Fields
-  </button>
-
-  <button type="submit" class="bttn-jelly bttn-md button-custom" {{action "submit"}}><span class="glyphicon glyphicon-log-in"></span>
-    Sign In
-  </button>
-</div>
+</fieldset>

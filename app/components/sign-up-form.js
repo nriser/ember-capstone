@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'form',
-  classNames: ['form-horizontal'],
+  // classNames: ['form-horizontal'],
 
   credentials: {}, // fill in this object later with user inputted credential info in sign-up-form.hbs
 

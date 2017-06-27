@@ -1,9 +1,26 @@
-<form class='palette-edit-form form-group' {{action 'editPalette' on='submit'}}>
-  {{input class='palette-edit-input' value=editedPalette.color1}}
-  {{input class='palette-edit-input' value=editedPalette.color2}}
-  {{input class='palette-edit-input' value=editedPalette.color3}}
-  {{input class='palette-edit-input' value=editedPalette.color4}}
-</form>
+<div class='palette-edit-form form-group row' {{action 'editPalette' on='submit'}}>
+
+  <div class="form-group col-sm-3">
+    <label for="color1">Color 1</label>
+      {{input class='palette-edit-input form-control' value=editedPalette.color1}}
+  </div>
+
+  <div class="form-group col-sm-3">
+    <label for="color2">Color 2</label>
+      {{input class='palette-edit-input form-control' value=editedPalette.color2}}
+  </div>
+
+  <div class="form-group col-sm-3">
+    <label for="color3">Color 3</label>
+      {{input class='palette-edit-input form-control' value=editedPalette.color3}}
+  </div>
+
+  <div class="form-group col-sm-3">
+    <label for="color4">Color 4</label>
+      {{input class='palette-edit-input form-control' value=editedPalette.color4}}
+  </div>
+
+</div>
 
 {{!-- value=editedPalette.color2: binds to newly created editedPalette. Otherwise, if left as
 value=palette.color2, binding the user inputted data to palettes automatically --}}

@@ -110,7 +110,7 @@ input[type="text"], input[type="password"], input[type="email"] {
   font-weight: 400;
 	font-size: 1em;
 	color: $input-color;
-  padding: 8px 30px;
+  // padding: 8px 30px;
 	border: 1px solid $input-color;
   text-align: center;
   // margin: 10px auto;
@@ -187,4 +187,8 @@ span.header-spiration-period {
 
 .glyphicon {
   font-size: 1em;
+}
+
+legend {
+  color: $color-old-rose;
 }

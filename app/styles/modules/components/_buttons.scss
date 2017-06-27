@@ -7,23 +7,17 @@
 }
 
 .palette-button-group {
-  // border: 2px solid blue;
-  margin-left: auto;
-  align-content: space-between;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 200px;
+  text-align: right;
 }
 
 .button-group-view-create {
   text-align: right;
   margin-right: 10%;
-  align-content: space-between;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 80px;
+  // align-content: space-between;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // height: 80px;
 }
 
 .button-create-palette-wrapper {
@@ -33,7 +27,7 @@
 
 .button-find-palettes-wrapper {
   margin: 25px auto 40px auto;
-
+  text-align: center;
 }
 
 .image-url-input-field {
@@ -42,7 +36,7 @@
 }
 
 .palette-edit-form {
-  text-align: center;
+  // text-align: center;
 }
 
 .edit-group-buttons {
@@ -50,7 +44,7 @@
 }
 
 .change-pw-form-group, .sign-in-form-group, .sign-up-form-group {
-  width: 50%;
+  // width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -73,5 +67,4 @@
 .buttons-sign-up-wrapper {
   margin: auto;
   text-align: center;
-  // flex-wrap: wrap;
 }
