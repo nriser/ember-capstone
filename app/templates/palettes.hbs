@@ -1,9 +1,12 @@
-<h2>My Palettes</h2>
-
 {{!-- refers to palette from index action in palettes.js --}}
-{{#each model as |palette|}}
-  {{palettes-all palette=palette deletePalette='deletePalette'}}
-{{/each}}
+<div class="row">
+  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+  <h2>My Palettes</h2>
+    {{#each model as |palette|}}
+      {{palettes-all palette=palette deletePalette='deletePalette'}}
+    {{/each}}
+  </div>
+</div>
 {{!-- for each palette, running the javascript in palettes-all.js --}}
 
 {{!-- {{palettes-get potato=palette}}

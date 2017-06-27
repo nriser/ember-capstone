@@ -1,22 +1,31 @@
-<div class="palette-flex">
-  <div class="palette-display color1" style={{colorBg1}}><h2 class="palette-colors">{{palette.color1}}</h2></div>
-  <div class="palette-display color2" style={{colorBg2}}><h2 class="palette-colors">{{palette.color2}}</h2></div>
-  <div class="palette-display color3" style={{colorBg3}}><h2 class="palette-colors">{{palette.color3}}</h2></div>
-  <div class="palette-display color4" style={{colorBg4}}><h2 class="palette-colors">{{palette.color4}}</h2></div>
-</div>
+  <div class="palette-display color1 col-xs-3" style={{colorBg1}}>
+    <h2 class="palette-colors">{{palette.color1}}</h2>
+  </div>
+
+  <div class="palette-display color2 col-xs-3" style={{colorBg2}}>
+    <h2 class="palette-colors">{{palette.color2}}</h2>
+  </div>
+
+  <div class="palette-display color3 col-xs-3" style={{colorBg3}}>
+    <h2 class="palette-colors">{{palette.color3}}</h2>
+  </div>
+
+  <div class="palette-display color4 col-xs-3" style={{colorBg4}}>
+    <h2 class="palette-colors">{{palette.color4}}</h2>
+  </div>
 
 
 {{!-- Cannot do below code due to error, "WARNING: Binding style attributes may introduce cross-site scripting vulnerabilities; please ensure that values being bound are properly escaped. For more information, including how to disable this warning, see http://emberjs.com/deprecations/v1.x/#toc_warning-when-binding-style-attributes"
 
 <span class="color4" style="background-color: {{palette.color4}}">{{palette.color4}}</span> --}}
 
-<div class="palette-button-group">
-  <button class="bttn-jelly bttn-md bttn-danger button-custom" {{action 'deletePalette'}}>
-    <span class="glyphicon glyphicon-trash"></span>Delete
-  </button>
+  <div class="palette-button-group">
+    <button class="bttn-jelly bttn-md bttn-danger button-custom" {{action 'deletePalette'}}>
+      <span class="glyphicon glyphicon-trash"></span>Delete
+    </button>
 
-  {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit"><span class="glyphicon glyphicon-edit"></span>Edit</button>{{/link-to}}
-</div>
+    {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit"><span class="glyphicon glyphicon-edit"></span>Edit</button>{{/link-to}}
+  </div>
 
 {{!-- {{#link-to 'palette-edit' palette}}<button type="button" class="bttn-jelly bttn-md button-custom bttn-edit" {{action 'hideButtons'}}>Edit</button>{{/link-to}}
 </div> --}}
