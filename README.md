@@ -1,12 +1,13 @@
 # Colorspiration.
 > An app for finding the dominant colors of an image
 
-"My Palettes" page, where you can view all of your color palettes.
+
 ![Colorspiration1](https://s3.us-east-2.amazonaws.com/wdi-nikki-projects/colorspiration1.png)
+"My Palettes" page, where you can view all of your color palettes.
 
-On the "Create New Palette" page, you can enter an image URL and get up to 20 dominant colors and add the colors you like into the color 1 - color 4 form fields to create a new palette!
+
 ![Colorspiration2](https://s3.us-east-2.amazonaws.com/wdi-nikki-projects/colorspiration2.png)
-
+On the "Create New Palette" page, you can enter an image URL and get up to 20 dominant colors and add the colors you like into the color 1 - color 4 form fields to create a new palette!
 
 ### Technologies used
 - HTML, CSS, JavaScript, jQuery, EmberJS, Sass
