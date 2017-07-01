@@ -1,7 +1,9 @@
 # Colorspiration.
 > An app for finding the dominant colors of an image
 
-![Colorspiration](https://s3.us-east-2.amazonaws.com/wdi-nikki-projects/Colorspiration.png)
+![Colorspiration1](https://s3.us-east-2.amazonaws.com/wdi-nikki-projects/colorspiration1.png)
+![Colorspiration2](https://s3.us-east-2.amazonaws.com/wdi-nikki-projects/colorspiration2.png)
+
 
 ### Technologies used
 - HTML, CSS, JavaScript, jQuery, EmberJS, Sass
@@ -52,4 +54,4 @@ As this was the first front-end framework that I have ever worked with, I decide
 Currently, a user must copy and paste the colors attained from the ColorTag API into the 'Create New Palette' color input fields. Next step would be to either automatically populate the input fields with the first four results from the API or have a 'Add color' next to each color. I am leaning towards the latter.
 
 ## Major Hurdles
-EmberJS is the first frontend framework I have ever worked with, so it took a while getting used to the concepts behind how it works, especially the relationship between routes and components, and the idea of 'action up, data down'. In general, I felt that the Ember docs are lacking, so I found myself learning a lot more from watching video tutorials online and discussing Ember concepts with experienced professionals.
+Ember is the first frontend framework I have ever worked with, so it took a while getting used to the concepts behind how it works, especially the relationship between routes and components, and the idea of 'action up, data down'. In general, I felt that the Ember docs are lacking, so I found myself learning a lot more from watching video tutorials online and discussing Ember concepts with experienced professionals.
