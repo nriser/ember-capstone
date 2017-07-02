@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+
+  h2.palette-colors {
+      font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  h2.palette-colors {
+      font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  h2.palette-colors {
+      font-size: 1.6em;
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .my-app-outlet h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .colorspiration-header {
+		font-size: 2.2em;
+	}
+
+  .my-app-outlet h2 {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  h2.palette-colors {
+		font-size: 1.3em;
+	}
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .colorspiration-header {
+		font-size: 1.5em;
+	}
+
+  .my-app-outlet h2 {
+    font-size: 1.4em;
+  }
+
+  h2.palette-colors {
+    font-size: 1em;
+  }
+}
