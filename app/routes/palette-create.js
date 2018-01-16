@@ -26,8 +26,8 @@ export default Ember.Route.extend({
       return this.get('ajaxImageAnalysis').request(url, {
         method: 'GET',
         headers: {
-          'X-Mashape-Key': 'qPKjKSb9PSmshOR4GoCO2nlp2ru3p1v6nrjjsn2arMbLhfjgIM',
-          'Accept' : 'application/json'
+          'X-Mashape-Key': '',
+          'Accept' : ''
         }
       })
       .then((response) => {
